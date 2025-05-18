@@ -1,11 +1,13 @@
 .page {
-  max-width: 1440px;
   background-color: #FCF5E5 ;
   min-height: 100vh;
-  
+
 }
 
 .page__section {
   max-width:1280px;
   margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
 }
