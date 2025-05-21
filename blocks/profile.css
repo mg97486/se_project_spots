@@ -31,7 +31,6 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
-
 }
 
 .profile__description {
@@ -50,19 +49,19 @@
 }
 
 .profile__edit-btn {
-display: flex;
-gap: 8px;
-margin-top: auto;
-background-color: transparent;
-border: none;
-padding: 0;
-font-family: "Poppins", Arial, Helvetica, sans-serif ;
-font-weight: 500;
-font-size: 16px;
-line-height: 100%;
-color: #212121;
-cursor: pointer;
-opacity: 0.7;
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif ;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #212121;
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 .profile__post-btn {
