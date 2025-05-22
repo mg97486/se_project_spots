@@ -1,6 +1,6 @@
 .cards {
   padding: 20px 0 40px;
-  border-bottom: 1px rgba(33,33,33,0.4) solid;
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
 
 .cards__list {
@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 6300px) {
   .cards {
     max-width: 288px;
     margin: 0 auto;
