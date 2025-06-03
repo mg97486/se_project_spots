@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 0 0 10px;
   opacity: 0;
   transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
@@ -92,7 +92,26 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 630px) {
+.modal__close-button:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.modal__submit-button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.modal__input:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .modal__container {
+    padding: 12px;
+    margin: 134px 10px;
+  }
+
   .modal__title {
     font-size: 20px;
     margin: 0 0 24px;
@@ -104,6 +123,7 @@
   }
 
   .modal__close-button {
-    top: 24px;
+    top: 5px;
+    right: 10px;
   }
 }
