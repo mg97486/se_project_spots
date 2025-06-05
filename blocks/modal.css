@@ -27,6 +27,7 @@
   background-color: #ffffff;
   padding: 32px 50px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .modal__close-button {
@@ -37,7 +38,6 @@
   position: absolute;
   top: 32px;
   right: 50px;
-  color: #212121;
   opacity: 40%;
 }
 
@@ -55,6 +55,10 @@
 }
 
 .modal__input {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
   display: block;
   width: 100%;
   border-radius: 8px;
@@ -73,6 +77,8 @@
   border-radius: 8px;
   background-color: #212121;
   color: #fcf5e5;
+  border: 0;
+  line-height: 1;
 }
 
 .modal__label {
@@ -87,7 +93,7 @@
   color: #2121214d;
 }
 
-.modal__is-opened:hover {
+.modal_is-opened:hover {
   visibility: visible;
   opacity: 1;
 }
@@ -104,12 +110,18 @@
 
 .modal__input:hover {
   cursor: pointer;
+  border-color: black;
+  opacity: 80%;
 }
 
 @media screen and (max-width: 320px) {
+  .modal {
+    padding: 10px;
+  }
   .modal__container {
     padding: 12px;
-    margin: 134px 10px;
+    justify-self: center;
+    align-items: center;
   }
 
   .modal__title {
@@ -125,5 +137,9 @@
   .modal__close-button {
     top: 5px;
     right: 10px;
+  }
+
+  .modal__input {
+    font-size: 16px;
   }
 }

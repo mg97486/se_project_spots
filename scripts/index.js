@@ -52,3 +52,6 @@ function handleAddCardSubmit(evt) {
 
 newPostFormElement.addEventListener("submit", handleAddCardSubmit);
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
+
+console.log(newPostImageLinkInput);
+console.log(newPostCaptionInput);
