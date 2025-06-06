@@ -93,11 +93,6 @@
   color: #2121214d;
 }
 
-.modal_is-opened:hover {
-  visibility: visible;
-  opacity: 1;
-}
-
 .modal__close-button:hover {
   cursor: pointer;
   opacity: 100%;
@@ -110,8 +105,7 @@
 
 .modal__input:hover {
   cursor: pointer;
-  border-color: black;
-  opacity: 80%;
+  border-color: #212121;
 }
 
 @media screen and (max-width: 320px) {
