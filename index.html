@@ -36,74 +36,16 @@
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
-            <li class="card">
-              <img
-                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt="van thorens"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Val Thorens</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/2-photo-by-ceiline-from-pexels.jpg"
-                alt="restraunt terrace"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Restraunt Terrace</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-                alt="outdoor cafe"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">An outdoor cafe</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
-                alt="bridge over forest"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">
-                  A very long bridge, over the forest...
-                </h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-                alt="tunnel"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Tunnel with morning light</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt="van thorens"
-                class="card__image"
-              />
-              <div class="card__content">
-                <h2 class="card__title">Mountain house</h2>
-                <button type="button" class="card__like-button"></button>
-              </div>
-            </li>
+            <template id="card-template">
+              <li class="card">
+                <img class="card__image" />
+                <button type="button" class="card__delete-button"></button>
+                <div class="card__content">
+                  <h2 class="card__title"></h2>
+                  <button type="button" class="card__like-button"></button>
+                </div>
+              </li>
+            </template>
           </ul>
         </section>
       </main>
@@ -175,6 +117,22 @@
             <button type="submit" class="modal__submit-button">Save</button>
           </form>
         </div>
+      </div>
+    </div>
+    <div class="modal modal__type_preview" id="preview-modal">
+      <div class="modal__image-container">
+        <button
+          type="button"
+          class="modal__close-button modal__close_type_preview"
+        >
+          <img
+            class="modal__close-symbol"
+            src="./images/Close__icon-white.svg"
+            alt="close__icon"
+          />
+        </button>
+        <img src="#" alt="" class="modal__image" />
+        <p class="modal__caption"></p>
       </div>
     </div>
     <script src="./scripts/index.js"></script>
