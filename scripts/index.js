@@ -127,14 +127,14 @@ newPostCloseButton.addEventListener("click", function () {
 });
 
 function handleEditProfileSubmit(evt) {
-  evt.preventDefault();
+  evt.preventDefault.reset();
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
   closeModal(editProfileModal);
 }
 
 function handleAddCardSubmit(evt) {
-  evt.preventDefault();
+  evt.preventDefault.reset();
 
   const InputValues = {
     name: newPostCaptionInput.value,
