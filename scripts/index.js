@@ -127,7 +127,7 @@ newPostCloseButton.addEventListener("click", function () {
 });
 
 function handleEditProfileSubmit(evt) {
-  evt.preventDefault.reset();
+  evt.preventDefault;
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
   closeModal(editProfileModal);
@@ -143,6 +143,7 @@ function handleAddCardSubmit(evt) {
 
   const cardElement = getCardElement(InputValues);
   cardsList.prepend(cardElement);
+  evt.target.reset;
 
   closeModal(newPostModal);
 }

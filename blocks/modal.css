@@ -152,17 +152,6 @@
 }
 
 @media screen and (max-width: 627px) {
-  .modal__close_type_preview {
-    top: -48px;
-    right: 0;
-  }
-
-  .modal__image {
-    max-width: unset;
-  }
-}
-
-@media screen and (max-width: 320px) {
   .modal {
     padding: 10px;
   }
