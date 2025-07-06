@@ -34,7 +34,7 @@ const initialCards = [
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg",
   },
 ];
-
+const editProfileSubmitBtn = document.querySelector(".modal__submit-button");
 const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileCloseButton = editProfileModal.querySelector(
@@ -128,6 +128,11 @@ editProfileBtn.addEventListener("click", function () {
     editProfileNameInput,
     editProfileDescriptionInput,
   ]);
+  toggleButtonState(
+    [editProfileNameInput, editProfileDescriptionInput],
+    editProfileSubmitBtn,
+    settings
+  );
   openModal(editProfileModal);
 });
 
